@@ -1,7 +1,7 @@
 import os
 import csv
 
-csvpath = os.path.join('..', 'Resources', 'budget_data.csv')
+csvpath = os.path.join('Resources', 'budget_data.csv')
 with open(csvpath) as csvfile: 
     csvreader = csv.reader(csvfile, delimiter=",")
     header = next(csvreader)
@@ -30,11 +30,11 @@ print(f"Greatest Increase in Profits: {Month_Count[Month_Increase]}(${(str(incre
 print(f"Greatest Decrease in Profits: {Month_Count[Month_Decrease]}(${(str(decrease))})")
 
 output = output.txt
-with open(output, "w") as new:
-    new.write("Financial Analysis")
-    new.write("____________________")
-    new.write(f"Total Months:{len(Month_Count)}")
-    new.write(f"Total: ${sum(Profit)}")
-    new.write(f"Average Change: {round(sum(Change_In_Profit)/len(Change_In_Profit),2)}")
-    new.write(f"Greatest Increase in Profits: {Month_Count[Month_Increase]}(${(str(increase))})")
-    new.write(f"Greatest Decrease in Profits: {Month_Count[Month_Decrease]}(${(str(decrease))})")
+with open(output, "w") as txt_file:
+    txt_file.write("Financial Analysis" + "\n")
+    txt_file.write("____________________")
+    txt_file.write(f"Total Months:{len(Month_Count)}")
+    txt_file.write(f"Total: ${sum(Profit)}")
+    txt_file.write(f"Average Change: {round(sum(Change_In_Profit)/len(Change_In_Profit),2)}")
+    txt_file.write(f"Greatest Increase in Profits: {Month_Count[Month_Increase]}(${(str(increase))})")
+    txt_file.write(f"Greatest Decrease in Profits: {Month_Count[Month_Decrease]}(${(str(decrease))})")
