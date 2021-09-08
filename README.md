@@ -109,7 +109,6 @@ Both of these challenges encompass a real-world situation where your newfound Py
   * Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
 
 
-
 ## Copyright
 
 Trilogy Education Services © 2019. All Rights Reserved.
