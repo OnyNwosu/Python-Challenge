@@ -1,6 +1,3 @@
-# Python-Challenge
-<<<<<<< HEAD
-=======
 # Python Homework - Py Me Up, Charlie
 
 ## Background
